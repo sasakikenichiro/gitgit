@@ -1,0 +1,302 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title>01-01</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<style>
+    html,body{
+        margin: 0;
+        
+    }
+    #header_img{
+        width: 100%;
+        height: 100px;
+        background-color: #cbd8d8;
+        text-align: center;
+    }
+    #content{
+        width: 643px;
+        margin: auto;
+        color: #4b6362;
+    }
+    #title {
+        color: #4b6362;
+        font-size: 20px;
+        line-height: 45px;
+        margin: 30px 0 0 0;
+        border-bottom: 1px solid #d0d0d0;
+    }
+    #description {
+        font-size: 14px;
+    }
+    .left_block {
+        border-bottom: 1px solid #d0d0d0;
+        width: 29%;
+        height: 80px;
+        float: left;
+        line-height: 80px;
+    }
+    .right_block{
+        border-bottom: 1px solid #d0d0d0;
+        width: 71%;
+        height: 80px;
+        float: left;
+    }
+    .right_block_left {
+        border-bottom: 1px solid #d0d0d0;
+        width: 25%;
+        height: 80px;
+        float: left;
+        line-height: 80px;
+    }
+    .right_block_right{
+        border-bottom: 1px solid #d0d0d0;
+        width: 75%;
+        height: 80px;
+        float: left;
+    }
+    .left_block_row3{
+        border-bottom: 1px solid #d0d0d0;
+        width: 29%;
+        height: 240px;
+        float: left;
+        line-height: 80px;
+    }
+    .right_block_row3{
+        border-bottom: 1px solid #d0d0d0;
+        width: 71%;
+        height: 240px;
+        float: left;
+    }
+    #bottom_area{
+        clear: both;
+        text-align: center;
+        padding: 25px 0 0 0;
+    }
+    .two_line{
+        line-height: 23px;
+    }
+    .text_row2{
+        margin: 18px 0 0 0;
+    }
+    .bottom_line_none{
+        border-bottom: none;
+    }
+    .top_line_add{
+        border-top: 1px solid #d0d0d0;
+    }
+    .require:after {
+        content: "必須";
+        background-color: #4b6362;
+        color: #fff;
+        padding: 1px 1px 1px 2px;
+    }
+    .req_justify_right {
+        float: right;
+        line-height: 22px;
+        margin: 27px 0 0 0;
+    }
+    .req_spaced_between{
+        margin: 0 0 0 10px;
+    }
+    .text{
+        margin: 18px 0 0 21px;
+        height: 39px;
+        background-color: #e2e2e2;
+        border: none;
+        font-size: 16px;
+    }
+    .checkbox{
+        margin: 34px 0 0 21px;
+    }
+    .text_min {
+        margin: 18px 0 0 0;
+    }
+    .text_zip {
+        margin: 18px 0 0 10px;
+    }
+    .textarea{
+        border: none;
+        background-color: #e2e2e2;
+        margin: 18px 0 0 0;
+    }
+    .zip_search {
+        display: inline-block;
+        padding: 12px 0 0px 6px;
+        width: 79px;
+        height: 29px;
+        background-color: #7d4400;
+        color: #fff;
+        margin: 0px 0 0px 32px;
+        font-size: 13px;
+        cursor: pointer;
+    }
+    .black_text{
+        color: #000;
+        font-size: 13px;
+    }
+    .underline_text{
+        text-decoration: underline;
+    }
+    .bold_text{
+        font-weight: bold;
+    }
+    .btn_left {
+        float: left;
+        width: 23%;
+        height: 50px;
+        color: #7d4400;
+        border: 1px solid #7d4400;
+        margin: 17px 17px 0 0;
+        line-height: 50px;
+        font-weight: bold;
+    }
+    .btn_right {
+        float: left;
+        width: 74%;
+        height: 80px;
+        background-color: #7d4400;
+        color: #fff;
+        line-height: 80px;
+        font-weight: bold;
+    }
+    #footer {
+        clear: both;
+        width: 100%;
+        height: 25px;
+        background-color: #cbd8d8;
+        text-align: center;
+        margin: 155px 0 0 0;
+        font-size: 12px;
+        line-height: 25px;
+    }
+</style>
+    
+</head>
+
+<body>
+    <div id="header_img">i with i</div>
+    <div id="content">
+        <div id="title">投稿フォーム</div>
+        <div id="current_step"></div>
+        <div id="description">
+            下記フォームから写真の投稿が出来ます。<br>
+            必要事項を入力していただき、終わりましたら「入力内容の確認」ボタンを押してください。
+        </div>
+        <div class="left_block top_line_add">
+            お名前<span class="require req_justify_right"></span>
+        </div>
+        <div class="right_block top_line_add">
+            <input type="text" name="" id="" class="text" size="50" placeholder="　例：一条 太郎">
+        </div>
+        <div class="left_block">
+            メールアドレス<span class="require req_justify_right"></span>
+        </div>
+        <div class="right_block">
+            <input type="text" name="" id="" class="text" size="50" placeholder="　例：ichijo@ichijo.co.jp">
+        </div>
+        <div class="left_block two_line">
+            <div class="text_row2">
+                一条工務店住宅の<br>
+                オーナー様
+            </div>
+        </div>
+        <div class="right_block">
+            <input type="checkbox" name="" id="" class="checkbox"><span class="black_text">　オーナー様はチェックをお願いします</span>
+        </div>
+        <div class="left_block">
+            インスタアカウント名
+        </div>
+        <div class="right_block">
+            <input type="text" name="" id="" class="text" size="50" placeholder="　例：ichijo_official">
+        </div>
+        
+        <div class="left_block_row3">
+            写真投稿
+        </div>
+        <div class="right_block_row3">
+            <div class="right_block_left">
+                投稿(1)<span class="require req_spaced_between"></span>
+            </div>
+            <div class="right_block_right">
+            </div>
+            <div class="right_block_left">
+                投稿(2)
+            </div>
+            <div class="right_block_right">
+            </div>
+            <div class="right_block_left bottom_line_none">
+                投稿(3)
+            </div>
+            <div class="right_block_right bottom_line_none">
+            </div>
+        </div>
+        <div class="left_block_row3">
+            ポイント記入
+        </div>
+        <div class="right_block_row3">
+            <div class="right_block_left">
+                投稿(1)<span class="require req_spaced_between"></span>
+            </div>
+            <div class="right_block_right">
+                <textarea name="" id="" class="text textarea" rows="2" cols="40" placeholder="　100文字以内"></textarea>
+            </div>
+            <div class="right_block_left">
+                投稿(2)
+            </div>
+            <div class="right_block_right">
+                <textarea name="" id="" class="text textarea" rows="2" cols="40" placeholder="　100文字以内"></textarea>
+            </div>
+            <div class="right_block_left bottom_line_none">
+                投稿(3)
+            </div>
+            <div class="right_block_right bottom_line_none">
+                <textarea name="" id="" class="text textarea" rows="2" cols="40" placeholder="　100文字以内"></textarea>
+            </div>
+        </div>
+        <div class="left_block_row3">
+            住所
+        </div>
+        <div class="right_block_row3">
+            <div class="right_block_left">
+                郵便番号
+            </div>
+            <div class="right_block_right">
+                〒
+                <input type="text" name="" id="" class="text text_zip" size="4" placeholder="例：135">
+                －
+                <input type="text" name="" id="" class="text text_zip" size="5" placeholder="例：0042">
+                <div class="zip_search">住所検索>></div>
+            </div>
+            <div class="right_block_left">
+                都道府県
+            </div>
+            <div class="right_block_right">
+                <input type="text" name="" id="" class="text text_min" size="38" placeholder="　例：東京都">
+            </div>
+            <div class="right_block_left bottom_line_none">
+                市区町村
+            </div>
+            <div class="right_block_right bottom_line_none">
+                <input type="text" name="" id="" class="text text_min" size="38" placeholder="　例：江東区木場5-10-10">
+            </div>
+        </div>
+        <div id="bottom_area">
+            <p class="black_text"><span class="underline_text">「個人情報保護方針について」</span>をご覧になりご同意のうえ、次の画面へお進みください。</p>
+            <p><input type="checkbox" name="" id="" class=""><span class="black_text"><span class="bold_text">個人情報保護方針に同意します</span></span></p>
+            <div class="btn_left">
+                リセット
+            </div>
+            <div class="btn_right">
+                入力内容の確認>>
+            </div>
+        </div>
+    </div>
+    <div id="footer">Copyright ICHIJO Co .,Ltd All rights reserved.</div>
+</body>
+</html>
